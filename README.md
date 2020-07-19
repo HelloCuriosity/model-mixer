@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/HelloCuriosity/model-mixer.svg?token=aWjqMgk11pxLTM3tzaxw&branch=master)](https://travis-ci.com/HelloCuriosity/model-mixer)
+
 # Model Mixer
 Model Mixer is a library to automate model generation for automated testing:
 - unit
