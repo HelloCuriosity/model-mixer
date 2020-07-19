@@ -1,4 +1,4 @@
-.PHONY: dependencies unit-test update-dependencies
+.PHONY: dependencies unit-test update-dependencies all
 
 dependencies:
 	pub get
@@ -8,3 +8,5 @@ unit-test:
 
 update-dependencies:
 	pub upgrade
+
+all: dependencies update-dependencies unit-test
