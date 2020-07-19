@@ -1,7 +1,7 @@
 library modelmixer;
 
 import 'package:lipsum/lipsum.dart';
-import 'package:modelmixer/providers/provider.dart';
+import 'package:model_mixer/providers/provider.dart';
 
 class StringProvider implements Provider<String> {
   StringProvider({this.numWords = defaultValue});

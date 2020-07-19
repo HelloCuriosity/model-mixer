@@ -1,4 +1,4 @@
-name: Model Mixer
+name: model_mixer
 description: Model Mixer is a library to automate model generation for automated tests.
 version: 0.0.1
 author: Hello Curiosity
