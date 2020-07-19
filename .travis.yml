@@ -1,3 +1,16 @@
 language: dart
 dart:
   - stable
+branches:
+  only:
+    - master
+    - develop
+
+jobs:
+  include:
+    - stage: Test
+      name: Unit Test
+      env: MAKETARGET=unit-test
+
+script:
+  - make $MAKETARGET
