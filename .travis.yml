@@ -1,0 +1,18 @@
+language: dart
+dart:
+  - stable
+
+branches:
+  only:
+    - master
+
+jobs:
+  include:
+    - stage: Test
+      name: Static Analysis
+      env: MAKETARGET=analyze
+    - name: Unit Test
+      env: MAKETARGET=unit-test
+
+script:
+  - make $MAKETARGET
