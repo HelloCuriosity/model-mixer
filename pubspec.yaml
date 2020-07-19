@@ -9,10 +9,6 @@ environment:
 
 dependencies:
   lipsum: ^1.0.1
-#  flutter:
-#    sdk: flutter
 
 dev_dependencies:
   test: ^1.14.3
-#  flutter_test:
-#    sdk: flutter

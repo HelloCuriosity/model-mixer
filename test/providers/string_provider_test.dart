@@ -3,9 +3,11 @@ import 'package:test/test.dart';
 import 'package:modelmixer/providers/string_provider.dart';
 
 void main() {
-  test('Test get()', () {
-    StringProvider provider = StringProvider();
-
-    expect(1, provider.get().length);
+  group('Test get()', () {
+    test('default', () {
+      var generated = StringProvider().get();
+      expect(String, generated.runtimeType);
+      expect(true, generated.isNotEmpty);
+    });
   });
 }
