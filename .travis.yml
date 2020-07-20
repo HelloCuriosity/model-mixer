@@ -13,6 +13,10 @@ jobs:
       env: MAKETARGET=analyze
     - name: Unit Test
       env: MAKETARGET=unit-test
-
+    - name: Coverage Report
+      env: MAKETARGET=coverage
 script:
   - make $MAKETARGET
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
