@@ -12,4 +12,4 @@ dependencies:
 
 dev_dependencies:
   test: ^1.14.3
-  coverage: ^0.14.0
+  test_cov: ^0.2.1
