@@ -23,6 +23,7 @@ class TestObject {
   final String stringValue;
 }
 
+// TODO: this can be removed after proper testing of ModelProvider.from
 class UnknownProvider {
   UnknownProvider(this.stringValue, this.intValue, this.doubleValue);
 
