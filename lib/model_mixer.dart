@@ -12,7 +12,6 @@ class ModelMixer {
     return instance.reflectee;
   }
 
-  // TODO: test me...
   static List<dynamic> getArguments(ClassMirror mirror) {
     List<dynamic> arguments = List<dynamic>();
     mirror.declarations.forEach((key, value) {
