@@ -11,6 +11,16 @@ void main() {
     expect(String, testObject.stringValue.runtimeType);
   });
 
+  group("test buildList", () {
+    test("default", () {
+      List<TestObject> list = modelMixer.buildList(TestObject);
+      expect(10, list.length);
+      list.forEach((element) {
+        expect(String, element.stringValue.runtimeType);
+      });
+    });
+  });
+
   group("test arguments", () {
     ClassMirror mirror = reflectClass(TestObject);
 
