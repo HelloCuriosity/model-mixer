@@ -19,6 +19,16 @@ void main() {
         expect(String, element.stringValue.runtimeType);
       });
     });
+
+    for (int i = 1; i < 100; i++) {
+      test('given: $i expected: $i', () {
+        List<TestObject> list = modelMixer.buildList(TestObject, i);
+        expect(i, list.length);
+        list.forEach((element) {
+          expect(String, element.stringValue.runtimeType);
+        });
+      });
+    }
   });
 
   group("test arguments", () {
