@@ -5,7 +5,8 @@ import 'package:test/test.dart';
 
 void main() {
   test("test get", () {
-    RandomProvider randomProvider = RandomProvider();
-    expect(Random, randomProvider.get().runtimeType);
+    var random = Random();
+    RandomProvider randomProvider = RandomProvider(random: random);
+    expect(random, randomProvider.get());
   });
 }
