@@ -39,18 +39,22 @@ void main() {
 
     test("test method", () {
       List<dynamic> arguments = ModelMixer.getArguments(mirror);
-      expect(2, arguments.length);
-      expect(String, arguments[0].runtimeType);
-      expect(int, arguments[1].runtimeType);
+      arguments.verify();
     });
 
     test("test extension", () {
       List<dynamic> arguments = mirror.arguments();
-      expect(2, arguments.length);
-      expect(String, arguments[0].runtimeType);
-      expect(int, arguments[1].runtimeType);
+      arguments.verify();
     });
   });
+}
+
+extension _ExpectExt on List<dynamic> {
+  verify() {
+    expect(2, this.length);
+    expect(String, this[0].runtimeType);
+    expect(int, this[1].runtimeType);
+  }
 }
 
 class TestObject {
