@@ -1,3 +1,4 @@
+import 'package:model_mixer/providers/primitives/double_provider.dart';
 import 'package:model_mixer/providers/primitives/integer_provider.dart';
 import 'package:model_mixer/providers/primitives/string_provider.dart';
 import 'package:model_mixer/model_mixer_exception.dart';
@@ -10,6 +11,8 @@ class ModelProvider {
         break;
       case int:
         return IntegerProvider().get();
+      case double:
+        return DoubleProvider().get();
       default:
         throw ModelMixerException("$type is not yet supported");
         break;
