@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
 
-import 'package:model_mixer/providers/string_provider.dart';
+import 'package:model_mixer/providers/primitives/string_provider.dart';
 
 void main() {
   test('test default', () {

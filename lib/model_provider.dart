@@ -1,4 +1,4 @@
-import 'package:model_mixer/providers/string_provider.dart';
+import 'package:model_mixer/providers/primitives/string_provider.dart';
 import 'package:model_mixer/model_mixer_exception.dart';
 
 class ModelProvider {

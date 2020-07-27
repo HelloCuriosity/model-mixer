@@ -1,5 +1,3 @@
-library modelmixer;
-
 import 'package:lipsum/lipsum.dart';
 import 'package:model_mixer/providers/provider.dart';
 
