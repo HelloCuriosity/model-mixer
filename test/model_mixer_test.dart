@@ -9,14 +9,16 @@ void main() {
   test("test build", () {
     TestObject testObject = modelMixer.build(TestObject);
     expect(String, testObject.stringValue.runtimeType);
+    expect(int, testObject.intValue.runtimeType);
   });
 
   group("test buildList", () {
     test("default", () {
       List<TestObject> list = modelMixer.buildList(TestObject);
       expect(10, list.length);
-      list.forEach((element) {
-        expect(String, element.stringValue.runtimeType);
+      list.forEach((testObject) {
+        expect(String, testObject.stringValue.runtimeType);
+        expect(int, testObject.intValue.runtimeType);
       });
     });
 
@@ -24,8 +26,9 @@ void main() {
       test('given: $i expected: $i', () {
         List<TestObject> list = modelMixer.buildList(TestObject, i);
         expect(i, list.length);
-        list.forEach((element) {
-          expect(String, element.stringValue.runtimeType);
+        list.forEach((testObject) {
+          expect(String, testObject.stringValue.runtimeType);
+          expect(int, testObject.intValue.runtimeType);
         });
       });
     }
@@ -36,20 +39,27 @@ void main() {
 
     test("test method", () {
       List<dynamic> arguments = ModelMixer.getArguments(mirror);
-      expect(1, arguments.length);
-      expect(String, arguments[0].runtimeType);
+      arguments.verify();
     });
 
     test("test extension", () {
       List<dynamic> arguments = mirror.arguments();
-      expect(1, arguments.length);
-      expect(String, arguments[0].runtimeType);
+      arguments.verify();
     });
   });
 }
 
+extension _ExpectExt on List<dynamic> {
+  verify() {
+    expect(2, this.length);
+    expect(String, this[0].runtimeType);
+    expect(int, this[1].runtimeType);
+  }
+}
+
 class TestObject {
-  TestObject(this.stringValue);
+  TestObject(this.stringValue, this.intValue);
 
   final String stringValue;
+  final int intValue;
 }
