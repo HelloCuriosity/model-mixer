@@ -5,7 +5,7 @@ import 'package:test/test.dart';
 void main() {
   group("test from", () {
     test('supported providers', () {
-      List<Type> types = [String, int];
+      List<Type> types = [String, int, double];
       types.forEach((type) {
         var generated = ModelProvider.from(type);
         expect(type, generated.runtimeType);
@@ -15,7 +15,7 @@ void main() {
     });
 
     test('unsupported providers', () {
-      List<Type> types = [double, bool];
+      List<Type> types = [bool];
       types.forEach((type) {
         expect(() => ModelProvider.from(type), throwsA(TypeMatcher<ModelMixerException>()));
       });

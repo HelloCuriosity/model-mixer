@@ -8,8 +8,7 @@ void main() {
 
   test("test build", () {
     TestObject testObject = modelMixer.build(TestObject);
-    expect(String, testObject.stringValue.runtimeType);
-    expect(int, testObject.intValue.runtimeType);
+    testObject.verify();
   });
 
   group("test buildList", () {
@@ -17,8 +16,7 @@ void main() {
       List<TestObject> list = modelMixer.buildList(TestObject);
       expect(10, list.length);
       list.forEach((testObject) {
-        expect(String, testObject.stringValue.runtimeType);
-        expect(int, testObject.intValue.runtimeType);
+        testObject.verify();
       });
     });
 
@@ -27,8 +25,7 @@ void main() {
         List<TestObject> list = modelMixer.buildList(TestObject, i);
         expect(i, list.length);
         list.forEach((testObject) {
-          expect(String, testObject.stringValue.runtimeType);
-          expect(int, testObject.intValue.runtimeType);
+          testObject.verify();
         });
       });
     }
@@ -51,15 +48,25 @@ void main() {
 
 extension _ExpectExt on List<dynamic> {
   verify() {
-    expect(2, this.length);
+    expect(3, this.length);
     expect(String, this[0].runtimeType);
     expect(int, this[1].runtimeType);
+    expect(double, this[2].runtimeType);
   }
 }
 
 class TestObject {
-  TestObject(this.stringValue, this.intValue);
+  TestObject(this.stringValue, this.intValue, this.doubleValue);
 
   final String stringValue;
   final int intValue;
+  final double doubleValue;
+}
+
+extension _TestObjectExt on TestObject {
+  verify() {
+    expect(String, this.stringValue.runtimeType);
+    expect(int, this.intValue.runtimeType);
+    expect(double, this.doubleValue.runtimeType);
+  }
 }

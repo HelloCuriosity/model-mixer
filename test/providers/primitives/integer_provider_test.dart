@@ -9,8 +9,8 @@ void main() {
       expect(true, generated >= IntegerProvider.defaultMin && generated < IntegerProvider.defaultMax);
     });
 
-    var min = 15;
-    var max = 2011;
+    int min = 15;
+    int max = 2011;
     for (int i = 1; i < 100; i++) {
       var minInput = min + i;
       var maxInput = max + i;
