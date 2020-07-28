@@ -4,7 +4,7 @@ import 'package:model_mixer/providers/provider.dart';
 import 'package:model_mixer/providers/random_provider.dart';
 
 class DoubleProvider implements Provider<double> {
-  DoubleProvider({this.min = defaultMin, this.max = defaultMax, this.random = null}) {
+  DoubleProvider({this.min = defaultMin, this.max = defaultMax, this.random}) {
     random ??= RandomProvider().get();
   }
 
