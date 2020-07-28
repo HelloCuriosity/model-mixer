@@ -3,5 +3,6 @@ class ModelMixerException extends Error {
 
   final String message;
 
+  @override
   String toString() => "Mixer exception: $message";
 }

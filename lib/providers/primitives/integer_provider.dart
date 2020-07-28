@@ -4,7 +4,7 @@ import 'package:model_mixer/providers/provider.dart';
 import 'package:model_mixer/providers/random_provider.dart';
 
 class IntegerProvider implements Provider<int> {
-  IntegerProvider({this.min = defaultMin, this.max = defaultMax, this.random = null}) {
+  IntegerProvider({this.min = defaultMin, this.max = defaultMax, this.random}) {
     random ??= RandomProvider().get();
   }
 
