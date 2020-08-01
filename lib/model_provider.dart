@@ -1,3 +1,4 @@
+import 'package:model_mixer/providers/date_time_provider.dart';
 import 'package:model_mixer/providers/primitives/boolean_provider.dart';
 import 'package:model_mixer/providers/primitives/double_provider.dart';
 import 'package:model_mixer/providers/primitives/integer_provider.dart';
