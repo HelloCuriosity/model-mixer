@@ -4,17 +4,17 @@ import 'package:test/test.dart';
 void main() {
   group("test get", () {
     test("test default", () {
-      var generated = IntegerProvider().get();
+      final generated = IntegerProvider().get();
       expect(int, generated.runtimeType);
       expect(true, generated >= IntegerProvider.defaultMin && generated < IntegerProvider.defaultMax);
     });
 
-    int min = 15;
-    int max = 2011;
+    const int min = 15;
+    const int max = 2011;
     for (int i = 1; i < 100; i++) {
-      var minInput = min + i;
-      var maxInput = max + i;
-      var generated = IntegerProvider(min: minInput, max: maxInput).get();
+      final minInput = min + i;
+      final maxInput = max + i;
+      final generated = IntegerProvider(min: minInput, max: maxInput).get();
       test('int $generated is >= $minInput and less than $maxInput', () {
         expect(int, generated.runtimeType);
         expect(true, generated >= minInput && generated <= maxInput);

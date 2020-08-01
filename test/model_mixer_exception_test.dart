@@ -3,8 +3,8 @@ import 'package:test/test.dart';
 
 void main() {
   test("test exception", () {
-    var message = "test message";
-    ModelMixerException exception = ModelMixerException(message);
+    const message = "test message";
+    final ModelMixerException exception = ModelMixerException(message);
     expect("Mixer exception: $message", exception.toString());
   });
 }
