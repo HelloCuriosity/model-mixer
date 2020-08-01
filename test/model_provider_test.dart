@@ -5,7 +5,7 @@ import 'package:test/test.dart';
 void main() {
   group("test from", () {
     test('supported providers', () {
-      final List<Type> types = [String, int, double];
+      final List<Type> types = [String, int, double, DateTime];
       for (var type in types) {
         final generated = ModelProvider.from(type);
         expect(type, generated.runtimeType);
