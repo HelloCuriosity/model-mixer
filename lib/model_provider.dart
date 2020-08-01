@@ -16,6 +16,8 @@ class ModelProvider {
         return DoubleProvider().get();
       case bool:
         return BooleanProvider().get();
+      case DateTime:
+        return DateTimeProvider().get();
       default:
         throw ModelMixerException("$type is not yet supported");
     }
