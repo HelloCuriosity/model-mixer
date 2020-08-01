@@ -16,10 +16,7 @@ void main() {
     });
 
     test('unsupported providers', () {
-      final List<Type> types = [bool];
-      for (var type in types) {
-        expect(() => ModelProvider.from(type), throwsA(TypeMatcher<ModelMixerException>()));
-      }
+      expect(() => ModelProvider.from(null), throwsA(TypeMatcher<ModelMixerException>()));
     });
   });
 }

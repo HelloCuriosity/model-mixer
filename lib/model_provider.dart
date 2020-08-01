@@ -1,3 +1,4 @@
+import 'package:model_mixer/providers/primitives/boolean_provider.dart';
 import 'package:model_mixer/providers/primitives/double_provider.dart';
 import 'package:model_mixer/providers/primitives/integer_provider.dart';
 import 'package:model_mixer/providers/primitives/string_provider.dart';
@@ -8,14 +9,14 @@ class ModelProvider {
     switch (type) {
       case String:
         return StringProvider().get();
-        break;
       case int:
         return IntegerProvider().get();
       case double:
         return DoubleProvider().get();
+      case bool:
+        return BooleanProvider().get();
       default:
         throw ModelMixerException("$type is not yet supported");
-        break;
     }
   }
 }

@@ -48,19 +48,26 @@ void main() {
 
 extension _ExpectExt on List<dynamic> {
   void verify() {
-    expect(3, length);
+    expect(4, length);
     expect(String, this[0].runtimeType);
     expect(int, this[1].runtimeType);
     expect(double, this[2].runtimeType);
+    expect(bool, this[3].runtimeType);
   }
 }
 
 class TestObject {
-  TestObject(this.stringValue, this.intValue, this.doubleValue);
+  TestObject(
+    this.stringValue,
+    this.intValue,
+    this.doubleValue,
+    this.booleanValue,
+  );
 
   final String stringValue;
   final int intValue;
   final double doubleValue;
+  final bool booleanValue;
 }
 
 extension _TestObjectExt on TestObject {
@@ -68,5 +75,6 @@ extension _TestObjectExt on TestObject {
     expect(String, stringValue.runtimeType);
     expect(int, intValue.runtimeType);
     expect(double, doubleValue.runtimeType);
+    expect(bool, booleanValue.runtimeType);
   }
 }
