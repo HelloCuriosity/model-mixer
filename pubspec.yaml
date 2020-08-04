@@ -1,11 +1,11 @@
 name: model_mixer
+version: 0.1.0
 description: Model Mixer is a library to automate model generation for automated tests.
-version: 0.0.1
-author: Hello Curiosity
-homepage: https://github.com/HelloCuriosity/model-mixer
+repository: https://github.com/HelloCuriosity/model-mixer
+issue_tracker: https://github.com/HelloCuriosity/model-mixer/issues
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.6.0 <3.0.0"
 
 dependencies:
   lipsum: ^1.0.1

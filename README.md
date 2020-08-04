@@ -7,8 +7,42 @@ Model Mixer is a library to automate model generation for automated testing:
 - integration
 - etc.
 
-# Flutter friendly
+# Flutter Friendly
 Model Mixer is Flutter friendly 🚀
+
+# Getting Started
+Define you model:
+```
+class TestObject {
+  TestObject(
+    this.stringValue,
+    this.intValue,
+    this.doubleValue,
+    this.booleanValue,
+    this.dateTimeValue,
+  );
+
+  final String stringValue;
+  final int intValue;
+  final double doubleValue;
+  final bool booleanValue;
+  final DateTime dateTimeValue;
+}
+```
+
+Auto generate models for testing:
+```
+final TestObject testObject = modelMixer.build(TestObject);
+
+```
+
+## Supported Types
+Model Mixer currently supports the auto generation for the following types:
+* bool
+* double
+* DateTime
+* int
+* String 
 
 # Inspiration
 Model Mixer was inspired from [Fritter Factory](https://github.com/equinox-one/fritterfactory), another great model generator for java and Android: 
