@@ -36,7 +36,6 @@ class TestObject {
 Auto generate models for testing:
 ```
 final TestObject testObject = modelMixer.build(TestObject);
-
 ```
 
 ## Supported Types
