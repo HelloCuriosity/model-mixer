@@ -1,3 +1,7 @@
-## [0.0.1] - TODO: Add release date.
-
-* TODO: Describe initial release.
+## [0.1.0] - 2020-08-04
+The initial release supports auto generated models for the following types:
+* bool
+* double
+* DateTime
+* int
+* String
