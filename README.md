@@ -10,9 +10,6 @@ Model Mixer is a library to automate model generation for automated testing:
 - integration
 - etc.
 
-# Flutter Friendly
-Model Mixer is Flutter friendly 🚀
-
 # Getting Started
 Define you model:
 ```

@@ -1,5 +1,5 @@
 name: model_mixer
-version: 0.1.0
+version: 0.1.1
 description: Model Mixer is a library to automate model generation for automated tests.
 repository: https://github.com/HelloCuriosity/model-mixer
 issue_tracker: https://github.com/HelloCuriosity/model-mixer/issues
