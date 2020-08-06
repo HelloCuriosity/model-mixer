@@ -11,7 +11,7 @@ Model Mixer is a library to automate model generation for automated testing:
 - etc.
 
 # Getting Started
-Define you model:
+### Define you model
 ```
 class TestObject {
   TestObject(
@@ -30,9 +30,22 @@ class TestObject {
 }
 ```
 
-Auto generate models for testing:
+### Generate model
 ```
 final TestObject testObject = modelMixer.build(TestObject);
+```
+
+### Generate list
+You can generate a list by using the `buildList` method, the default is 10 unless otherwise specified.
+
+```
+final TestObject testObject = modelMixer.buildList(TestObject);
+```
+
+You can create different sized lists by specifying the number of elements.
+
+```
+final TestObject testObject = modelMixer.buildList(TestObject, 3);
 ```
 
 ## Supported Types
