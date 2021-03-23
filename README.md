@@ -1,9 +1,9 @@
 # Model Mixer 🍹
 
 [![Build Status](https://github.com/HelloCuriosity/model-mixer/actions/workflows/main.yml/badge.svg?event=push)](https://github.com/HelloCuriosity/model-mixer/actions)
-[![codecov](https://codecov.io/gh/HelloCuriosity/model-mixer/branch/master/graph/badge.svg)](https://codecov.io/gh/HelloCuriosity/model-mixer)
+[![codecov](https://codecov.io/gh/HelloCuriosity/model-mixer/branch/main/graph/badge.svg)](https://codecov.io/gh/HelloCuriosity/model-mixer)
 [![Pub Version](https://img.shields.io/pub/v/model_mixer?color=blue)](https://pub.dev/packages/model_mixer)
-[![License](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/HelloCuriosity/model-mixer/blob/master/LICENSE)
+[![License](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/HelloCuriosity/model-mixer/blob/main/LICENSE)
 [![ko-fi](https://img.shields.io/badge/donate%20on-Ko--fi-blue.svg)](https://ko-fi.com/U7U4L9F5)
 
 ## About

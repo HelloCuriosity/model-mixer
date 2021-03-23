@@ -23,7 +23,7 @@ Code style is driven by the `analyze-options.yml` if it doesn't adhere to it you
     $ make analyze
     
 ## Work with Feature Branches
-While developing create feature branches from master. A good rule of thumb is to prefix them with one of the following:
+While developing create feature branches from main. A good rule of thumb is to prefix them with one of the following:
 
 * feature/...
 * enhancement/...
