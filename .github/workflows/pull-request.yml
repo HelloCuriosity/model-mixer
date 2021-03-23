@@ -1,6 +1,9 @@
-name: Model Mixer 🚀
+name: Model Mixer
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main

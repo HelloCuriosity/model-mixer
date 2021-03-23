@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/HelloCuriosity/model-mixer.svg?token=aWjqMgk11pxLTM3tzaxw&branch=master)](https://travis-ci.com/HelloCuriosity/model-mixer)
+![build](https://github.com/HelloCuriosity/model-mixer/workflows/.github/workflows/Model%Mixer/badge.svg)
 [![codecov](https://codecov.io/gh/HelloCuriosity/model-mixer/branch/master/graph/badge.svg)](https://codecov.io/gh/HelloCuriosity/model-mixer)
 [![Pub Version](https://img.shields.io/pub/v/model_mixer?color=blue)](https://pub.dev/packages/model_mixer)
 [![License](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/HelloCuriosity/model-mixer/blob/master/LICENSE)
