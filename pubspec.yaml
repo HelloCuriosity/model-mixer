@@ -5,11 +5,11 @@ repository: https://github.com/HelloCuriosity/model-mixer
 issue_tracker: https://github.com/HelloCuriosity/model-mixer/issues
 
 environment:
-  sdk: ">=2.6.0 <3.0.0"
+  sdk: ">=2.11.0 <3.0.0"
 
 dependencies:
   lipsum: ^1.0.1
 
 dev_dependencies:
-  test: ^1.14.3
-  test_cov: ^0.2.1
+  test: ^1.17.7
+  test_cov: ^1.0.1

@@ -1,4 +1,4 @@
-.PHONY: analyze coverage dependencies publish unit-test update-dependencies all
+.PHONY: analyze coverage dependencies outdated publish test update-dependencies all
 
 analyze:
 	dartanalyzer --fatal-warnings lib
@@ -9,13 +9,16 @@ coverage:
 dependencies:
 	pub get
 
+outdated:
+	pub outdated
+
 publish:
 	 pub publish
 
-unit-test:
+test:
 	pub run test
 
 update-dependencies:
 	pub upgrade
 
-all: dependencies update-dependencies analyze unit-test
+all: dependencies update-dependencies analyze test
