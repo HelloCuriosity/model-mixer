@@ -56,6 +56,3 @@ Model Mixer currently supports the auto generation for the following types:
 * DateTime
 * int
 * String 
-
-## Inspiration
-Model Mixer was inspired from [Fritter Factory](https://github.com/equinox-one/fritterfactory), another great model generator for java and Android. 
